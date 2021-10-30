@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.1/dist/echarts.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="Row">
+      <div class="ColumnLeft">
+        <img
+          src="http://localhost:3000/static/media/bebebus_title.c94465a0.JPG"
+          style="height: 40px; width: 100px"
+          alt="Logo"
+        />
+        <h3 style="display: inline-block; vertical-align: 50%">
+          安全座椅<i class="fa fa-caret-down" style="margin-left: 5px"></i>
+        </h3>
+      </div>
+      <div class="ColumnMid">
+        <div class="verbar"></div>
+        <div class="topnav">
+          <a class="active" href="#overview">概览</a>
+          <a href="#analysis"
+            >分析<i class="fa fa-caret-down" style="margin-left: 5px"></i
+          ></a>
+          <a href="#user-operating">用户运营</a>
+          <a href="#user-feedback">用户反馈</a>
+          <a href="#log">日志</a>
+          <a href="#content">内容</a>
+          <a href="#fault-management">故障管理</a>
+        </div>
+      </div>
+      <div class="ColumnRight">
+        <div class="IconGroup">
+          <i class="fa fa-search"></i>
+          <i class="fa fa-question-circle-o"></i>
+          <i class="fa fa-mobile"></i>
+          <i class="fa fa-bell-o"></i>
+        </div>
+        <div class="UserSettingGroup">
+          <div class="UserSettingItemRec">数据中心</div>
+          <div class="UserSettingItemRec">系统管理</div>
+          <div class="UserSettingItemNormal">1391288888</div>
+          <div class="UserSettingItemNormal">
+            分析师<i class="fa fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Pages-->
+    <div>
+      <div class="sidenav">
+        <a href="#about">数据概览</a>
+        <button class="dropdown-btn">
+          基础数据概览
+          <i class="fa fa-chevron-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <button class="dropdown-btn">
+            整体概览
+            <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">实时统计</a>
+            <a href="#">整体趋势</a>
+            <a href="#">用户生命周期</a>
+          </div>
+
+          <button class="dropdown-btn">
+            用户分析
+            <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">新增用户</a>
+            <a href="#">活跃用户</a>
+            <a href="#">用户留存</a>
+            <a href="#">用户参与度</a>
+          </div>
+
+          <button class="dropdown-btn">
+            终端数据
+            <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">设备数据</a>
+            <a href="#">地域分析</a>
+          </div>
+
+          <button class="dropdown-btn">
+            运营数据
+            <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">发现</a>
+            <a href="#">启动页</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="card-row">
+          <h3>实时统计</h3>
+          <div class="card-column-4">
+            <div class="card">
+              <p class="title">今日I累计新增用户</p>
+              <p class="datespan">2021-10-25 ～ 2021-10-28</p>
+              <p class="info">1，191 人</p>
+            </div>
+          </div>
+          <div class="card-column-4">
+            <div class="card">
+              <p class="title">今日I累计老用户活跃</p>
+              <p class="datespan">2021-10-25 ～ 2021-10-28</p>
+              <p class="info">677 人</p>
+            </div>
+          </div>
+          <div class="card-column-4">
+            <div class="card">
+              <p class="title">今日I累计活跃用户数</p>
+              <p class="datespan">2021-10-25 ～ 2021-10-28</p>
+              <p class="info">1，788 人</p>
+            </div>
+          </div>
+          <div class="card-column-4">
+            <div class="card">
+              <p class="title">今日I累计访问次数</p>
+              <p class="datespan">2021-10-25 ～ 2021-10-28</p>
+              <p class="info">1，198 人</p>
+            </div>
+          </div>
+        </div>
+        <div class="horizontal-bar"></div>
+        <div class="data-view">
+          <div class="card-row">
+            <div class="card-column-2">Chart 1</div>
+            <div class="card-column-2">Chart 2</div>
+          </div>
+          <div class="card-row">
+            <div class="card-column-2">Chart 3</div>
+            <div class="card-column-2">Chart 4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
