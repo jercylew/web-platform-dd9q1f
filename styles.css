@@ -103,7 +103,7 @@ body {
 .sidenav {
   height: 100%;
   width: 200px;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 50px;
   left: 0;
@@ -202,7 +202,14 @@ body {
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
-  .card-column {
+  .card-column-4 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-column-2 {
     width: 100%;
     display: block;
     margin-bottom: 20px;
@@ -241,6 +248,9 @@ body {
 }
 .data-view {
   margin-top: 15px;
+}
+.chart {
+  height: 40%;
 }
 /**********************Card View***********************/
 
